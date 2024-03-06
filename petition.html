@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unca.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>PETITION</title>
+</head>
+<nav>
+      <div class="navbar">
+        <div class="container2 nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <!--<div class="logo"><img src="rockyblue.png" style="width: 50%;height: 50%; margin-right: 0%">
+          </div>-->
+          <div class="menu-items">
+            <li><a link href="index.html">home</a></li>
+            <li><a link href="design.html">the redesign</a></li>
+            <li><a link href="research.html">history & research</a></li>
+            <li><a link href="about.html">about us</a></li>
+            <li><a link href="petition.html">sign towards change</a></li>
+          </div>
+        </div>
+		  <img src="rockyblue.png" class="logo">
+      </div>
+		
+    </nav>
+	<body style="background: linear-gradient(to top,#0842a7,#0842a7,#C9D9E9,#c9d9e9)">
+        
+    <!--<div class="parent">
+    <section class="signature-component">
+        <p style="font-size: 18pt">Enter your first name and last name initial:</p>
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastNameInitial" placeholder="Last Name Initial">
+        <button id="signButton">Sign</button>
+        <p style="font-size: 18pt">Total Signatures: <span id="signatureCount">0</span></p>
+    </section>
+          <div class="customCheckBoxHolder">
+
+    <input class="customCheckBoxInput" id="cCB1" type="checkbox">
+    <label class="customCheckBoxWrapper" for="cCB1">
+        <div class="customCheckBox">
+            <div class="inner">Student</div>
+        </div>
+    </label>
+
+    <input class="customCheckBoxInput" id="cCB2" type="checkbox">
+    <label class="customCheckBoxWrapper" for="cCB2">
+        <div class="customCheckBox">
+            <div class="inner">Faculty</div>
+        </div>
+    </label>
+
+    <input class="customCheckBoxInput" id="cCB3" type="checkbox">
+    <label class="customCheckBoxWrapper" for="cCB3">
+        <div class="customCheckBox">
+            <div class="inner">Alumni</div>
+        </div>
+    </label>
+              
+    <input class="customCheckBoxInput" id="cCB3" type="checkbox">
+    <label class="customCheckBoxWrapper" for="cCB3">
+        <div class="customCheckBox">
+            <div class="inner">Local</div>
+        </div>
+    </label>
+
+</div>
+    </div>
+    
+   
+
+
+  <h1>Signature Count:</h1>
+  <p id="signature-count">Loading...</p>
+    </body>
+    
+    
+    <script>
+         function fetchSignatureCount() {
+      fetch("https://www.change.org/p/redesign-of-rocky-the-bulldog-logo?utm_medium=custom_url&utm_source=share_petition&recruited_by_id=698c5f20-a8dc-11ea-893c-b97f2e2ad4df")
+        .then(response => response.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, "text/html");
+          const signatureCount = doc.querySelector(".text-lg.text-gray-800.leading-none").innerText.trim();
+          document.getElementById("signature-count").textContent = signatureCount;
+        })
+        .catch(error => console.error('Error fetching signature count:', error));
+    }
+
+    // Fetch signature count initially
+    fetchSignatureCount();
+
+    // Update signature count every 30 seconds
+    setInterval(fetchSignatureCount, 30000);
+/**
+DATABASE_HOST=aws.connect.psdb.cloud;
+DATABASE_NAME=rockyredesign;
+DATABASE_USERNAME=2rn2psczcsqr4qw3i0t8;
+DATABASE_PASSWORD=pscale_pw_JbsOs7icuLZKApIjiYpa8F75aY5IFgGN8KMhKDbSQWe;
+
+        const signButton = document.getElementById('signButton');
+        const signatureCountElement = document.getElementById('signatureCount');
+        let signatureCount = 0;
+
+        signButton.addEventListener('click', () => {
+            const firstName = document.getElementById('firstName').value;
+            const lastNameInitial = document.getElementById('lastNameInitial').value;
+
+            if (firstName && lastNameInitial) {
+                // You can save the signature data or update the signature count here
+                signatureCount++;
+                signatureCountElement.textContent = signatureCount;
+                console.log(`Signature from ${firstName} ${lastNameInitial} recorded.`);
+            } else {
+                alert('Please enter both first name and last name initial.');
+            }
+        });
+**/
+
+    </script>
+  --><br>
+    <br>
+		<h1 class="changetitle">Let's change our identity <br><span style="text-decoration: underline;transform: translateX(4vw)">TOGETHER</span></h1><br><br>
+   <p class="appear" style="color: aliceblue;font-size: 18pt">Scan or click the QR code to jump to our petition page</p> <br><br>
+   <div class="appear">
+         <a link href="https://chng.it/VpWY22wBsP"><img src="petition-qrcode.png" style="width:20%;height:20%;min-height: 100px;min-width: 100px;max-height: 50%;max-width: 50%"> </a></div><br>
+    <p class="appear" style="text-align: justify;"><span style="color: #0F2443;text-shadow: 0px 0px 0px black;font-weight: 700">Are you passionate about shaping the identity of UNC Asheville and ensuring it truly reflects the spirit of our vibrant community? Take a stand with us by signing the <b>"Rocky Redesign"</b> petition today!</span>
+<br><br>
+At UNC Asheville, we hold dear to our core values of diversity and inclusion, innovation, and sustainability. Our beloved mascot, <b>Rocky,</b> serves as the emblem of our university spirit. However, we recognize the importance of a logo that resonates with our diverse student body and represents our commitment to these values.
+<br><br><img src="whitehead.png" style="margin: 0 auto;text-align: center;align-self: center;justify-self: center;align-content: center;align-items: center;display: block"><br>
+By signing the <b>"Rocky Redesign" </b>petition, you're not only advocating for a visual transformation; you're championing a movement towards a logo that better identifies with every student, faculty member, and alumni. Together, we can pave the way for a symbol that truly encapsulates the values of diversity and inclusion, innovation, and sustainability that define our university.
+<br><br>
+		Join us in this pivotal moment of change. Sign the petition today and be a part of shaping the future identity of UNC Asheville!</p><br>
+    <div style="align-self: center;margin: 0 auto; align-content: center; align-items: center; text-align: center"><img src="fullbodyrocky.png" style="width:15%; height:15%; align-self: center;margin: 0 auto;"></div>
+    
+</body>
+   </html>
